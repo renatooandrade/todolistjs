@@ -43,9 +43,9 @@ function show() {
     todo.forEach((item, id) => {
         novaLista = novaLista +
             `<li class="${item.complete && "done"}">
-                <img src="https://www.svgrepo.com/show/257532/checked-success.svg" alt="check" onclick="checked(${id})">
+                <img src="./img/checked.svg" alt="check" onclick="checked(${id})">
                 ${item.task}
-                <img src="https://www.svgrepo.com/show/474763/cancel.svg" alt="delete" onclick="deleteItem(${id})">
+                <img src="./img/cancel.svg" alt="delete" onclick="deleteItem(${id})">
             </li>`
 
     });
